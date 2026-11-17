@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Screen.png" alt="GoPro USB camera logo" width="112">
+  <img src="Screen.png" alt="GoPro USB camera logo" width="500">
   <h1>GoPro USB</h1>
   <p>A Windows desktop application for GoPro USB capture, live image adjustments, and virtual camera output.</p>
   <p><strong>Rust backend · Embedded web interface · Windows 11 x64</strong></p>
