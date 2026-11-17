@@ -1,0 +1,9 @@
+EXPORTS
+ DllGetClassObject PRIVATE
+ DllCanUnloadNow PRIVATE
+ GoProMFInstall
+ GoProMFCreate
+ GoProMFDestroy
+ GoProMFWrite
+ GoProMFCheck
+ GoProMFLocalCheck

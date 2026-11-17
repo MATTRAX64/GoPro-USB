@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'">
+<title>GoPro USB</title>
+<link rel="stylesheet" href="/style.css">
+<body>
+<header>
+  <div class="brand"><img src="/camera.png" alt=""><strong>GoPro USB</strong></div>
+  <div class="metrics" id="metrics"></div>
+  <select id="lang" aria-label="Langue"></select>
+</header>
+<main>
+  <section class="monitor" aria-label="Aperçu">
+    <div class="monitorbar"><span id="status" role="status">Connexion USB</span><span id="metadata"></span></div>
+    <div class="viewport">
+      <canvas id="frame" width="800" height="450" hidden aria-label="Flux vidéo GoPro"></canvas>
+      <div id="placeholder"><img src="/camera.png" alt=""><p data-label="Aucun flux vidéo">Aucun flux vidéo</p><button id="retry" hidden>Réessayer</button></div>
+    </div>
+  </section>
+  <section class="controls" aria-label="Réglages">
+    <article>
+      <h2 data-label="Caméra">Caméra</h2>
+      <select id="camera" aria-label="Caméra"></select>
+      <button class="primary" id="refresh">Rechercher</button>
+      <div id="virtual-status" role="status"></div>
+      <button id="install-camera" hidden>Installer la caméra Windows</button>
+      <details><summary>USB</summary>
+        <button id="recheck-modes">Revérifier les modes caméra</button>
+        <form id="address"><label><span data-label="Adresse de la caméra">Adresse de la caméra</span><input id="ip" autocomplete="off" placeholder="172.x.x.51"></label><button>OK</button></form>
+      </details>
+    </article>
+    <article>
+      <h2 data-label="Vidéo">Vidéo</h2>
+      <div class="pair">
+        <label><span id="resolution-label">Résolution</span><select id="resolution"></select></label>
+        <label>FPS<select id="fps"></select></label>
+      </div>
+      <label><span data-label="Champ de vision">Champ de vision</span><select id="lens"></select></label>
+      <label><span id="gpu-label">Décodage vidéo</span><select id="gpu"></select></label>
+    </article>
+    <article>
+      <h2 data-label="Réglages de l’image">Réglages de l’image</h2>
+      <div id="filters"></div>
+      <div class="pair">
+        <label class="toggle"><input id="mirror" type="checkbox"><span><span data-label="Miroir">Miroir</span> X</span></label>
+        <label class="toggle"><input id="flip" type="checkbox"><span><span data-label="Miroir">Miroir</span> Y</span></label>
+      </div>
+      <button id="reset" data-label="Réinitialiser l’image">Réinitialiser l’image</button>
+    </article>
+  </section>
+</main>
+<script src="/interface.js"></script>
+</body>
+</html>
+
