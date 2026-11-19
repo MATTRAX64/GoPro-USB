@@ -208,7 +208,7 @@ Capability caching stores mode metadata, not captured photos or video. Applicati
 
 ## Third-party acknowledgments
 
-The DirectShow implementation adapts [UnityCapture](https://github.com/schellingb/UnityCapture), licensed under MIT and based on UnityCam. Upstream copyright and license notices are retained in the source files and in [third_party/UnityCapture/NOTICE.txt](third_party/UnityCapture/NOTICE.txt). The included DirectShow base classes retain their Microsoft notices.
+The DirectShow implementation adapts [UnityCapture](https://github.com/schellingb/UnityCapture), licensed under MIT and based on UnityCam. Upstream copyright and license notices are retained in the source files and in [third_party/UnityCapture/NOTICE.txt](GoPro%20USB/third_party/UnityCapture/NOTICE.txt). The included DirectShow base classes retain their Microsoft notices.
 
 Rust dependencies retain their respective licenses. FFmpeg and Microsoft WebView2 are external components.
 
